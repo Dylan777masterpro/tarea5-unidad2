@@ -1,0 +1,56 @@
+public class Rectangulo {
+    // Método para calcular el área con enteros
+    public int calcularArea(int base, int altura) {
+        return base * altura;
+    }
+
+    // Método para calcular el área con doubles
+    public double calcularArea(double base, double altura) {
+        return base * altura;
+    }
+
+    // Método para calcular el perímetro con enteros
+    public int calcularPerimetro(int base, int altura) {
+        return 2 * (base + altura);
+    }
+
+    // Método para calcular el perímetro con doubles
+    public double calcularPerimetro(double base, double altura) {
+        return 2 * (base + altura);
+    }
+}
+
+public class Empleado {
+    // Método para calcular el salario con solo sueldo
+    public double calcularSalario(double sueldoBase) {
+        return sueldoBase;
+    }
+
+    // Método para calcular el salario con sueldo y bonificación
+    public double calcularSalario(double sueldoBase, double bonificacion) {
+        return sueldoBase + bonificacion;
+    }
+
+    // Método para calcular el salario con sueldo, bonificación y horas extras
+    public double calcularSalario(double sueldoBase, double bonificacion, int horasExtras) {
+        return sueldoBase + bonificacion + (horasExtras * 20);
+    }
+}
+
+public class CalculadoraImpuestos {
+    // Método para calcular impuestos con solo ingresos
+    public double calcularImpuestos(int ingresos) {
+        return ingresos + 0.15;
+    }
+
+    // Método para calcular impuestos con ingresos y porcentajeImpuestos
+    public double calcularImpuestos(int ventas, double porcentajeImpuestos) {
+        return ventas * (porcentajeImpuestos / 100);
+    }
+
+    // Método para calcular impuestos con dividendos, porcentajeImpuestos y exención
+    public double calcularImpuestos(double dividendos, double porcentajeImpuestos, double exencion) {
+        double impuestos = dividendos * (porcentajeImpuestos / 100);
+        return (impuestos > exencion) ? (impuestos - exencion) : 0;
+    }
+}
